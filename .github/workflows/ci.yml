@@ -9,12 +9,17 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        project: [ch01_06, ch07, ch08, ch09, ch10, ch11]
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Format check (cargo fmt)
+      - name: Format check
         run: cargo fmt --check
+        working-directory: ${{ matrix.project }}
 
-      - name: Syntax/type check (cargo check)
+      - name: Cargo check
         run: cargo check --all-targets
+        working-directory: ${{ matrix.project }}
