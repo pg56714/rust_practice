@@ -1,5 +1,5 @@
 use chapter11::add;
-mod common;     // 匯入 tests/common/mod.rs
+mod common; // 匯入 tests/common/mod.rs
 
 #[test]
 fn it_adds_two() {
