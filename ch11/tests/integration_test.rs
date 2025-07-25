@@ -1,4 +1,4 @@
-use chapter11::add;
+use ch11::add;
 mod common; // 匯入 tests/common/mod.rs
 
 #[test]

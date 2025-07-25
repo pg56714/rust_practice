@@ -1,4 +1,4 @@
 [package]
 edition = "2024"
-name = "chapter11"
+name = "ch11"
 version = "0.1.0"
