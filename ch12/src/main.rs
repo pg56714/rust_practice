@@ -29,11 +29,12 @@ use std::process;
 use ch12::Config;
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
+    // let args: Vec<String> = env::args().collect();
 
     // let config = parse_config(&args);
     // let config = Config::new(&args);
-    let config = Config::build(&args).unwrap_or_else(|err| {
+    // let config = Config::build(&args).unwrap_or_else(|err| {
+    let config = Config::build(env::args()).unwrap_or_else(|err| {
         eprintln!("解析引數時出現問題：{err}");
         process::exit(1);
     });
