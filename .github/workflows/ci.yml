@@ -12,7 +12,21 @@ jobs:
     strategy:
       matrix:
         project:
-          [ch01_06, ch07, ch08, ch09, ch10, ch11, ch12, ch13, ch15, ch16, ch17]
+          [
+            ch01_06,
+            ch07,
+            ch08,
+            ch09,
+            ch10,
+            ch11,
+            ch12,
+            ch13,
+            ch15,
+            ch16,
+            ch17,
+            ch18,
+            ch19,
+          ]
 
     steps:
       - uses: actions/checkout@v4

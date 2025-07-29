@@ -1,0 +1,8 @@
+[package]
+edition = "2024"
+name = "ch19"
+version = "0.1.0"
+
+[dependencies]
+hello_macro = {path = "./hello_macro"}
+hello_macro_derive = {path = "./hello_macro_derive"}

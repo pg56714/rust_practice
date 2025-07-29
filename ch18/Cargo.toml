@@ -1,0 +1,4 @@
+[package]
+edition = "2024"
+name = "ch18"
+version = "0.1.0"
